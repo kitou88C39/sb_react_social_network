@@ -10,9 +10,10 @@ public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Strig user;
+    private String user; // 修正: Strig -> String
     private String content;
 
+    // コンストラクタ
     public Comment() {
         super();
     }
@@ -21,6 +22,30 @@ public class Comment {
         super();
         this.user = user;
         this.content = content;
+    }
 
+    // Getter と Setter
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 }
