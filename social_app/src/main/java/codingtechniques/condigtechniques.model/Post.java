@@ -76,4 +76,24 @@ public class Post {
     public int getLike() {
         return like;
     }
+
+    public void setLike(int like) {
+        this.like = like;
+    }
+
+    public int getUnlike() {
+        return unlike;
+    }
+
+    public void setUnlike(int unlike) {
+        this.unlike = unlike;
+    }
+
+    public List<Comment> getComments() {
+        return comments;
+    }
+
+    public void setComments(List<Comment> comments) {
+        this.comments = comments;
+    }
 }
