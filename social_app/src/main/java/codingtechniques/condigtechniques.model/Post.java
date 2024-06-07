@@ -39,4 +39,13 @@ public class Post {
     public Post() {
         super();
     }
+
+    public Post(Strig user, String content, int like, int unlike, List<Comment> comments) {
+        super();
+        this.user = user;
+        this.content = content;
+        this.like = like;
+        this.unlike = unlike;
+        this.comments = comments;
+    }
 }
